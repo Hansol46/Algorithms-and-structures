@@ -39,19 +39,22 @@ function findMax(arr) {
 Алгоритм становится медленнее, но не линейно, а медленнее в соответствии с логарифмической функцией.
 Пример: Бинарный поиск. В этом алгоритме на каждом шаге половина данных отсекается, и поиск продолжается в оставшейся половине. Это означает, что при увеличении размера входных данных вдвое, бинарный поиск требует всего одного дополнительного шага.
 ```
-function binarySearch(arr, target) {
-	let left = 0;
-	let right = arr.length - 1;
-  while (left &lt;= right) {
-	  let mid = Math.floor((left + right) / 2);
-	  if (arr[mid] === target) return mid; 
-	  if (arr[mid] &lt; target) {
-      left = mid + 1;
-	  } else {
-      right = mid - 1; // искать в левой половине
-	  }
+function binarySearch(array, target) {
+  let left = 0;
+  let right = array.length - 1;
+
+  while (left <= right) {
+    let mid = Math.floor((left + right) / 2);
+    if (array[mid] === target) {
+      return array[mid];
+    }
+    if (array[mid] < target) {
+      left = mid + 1; 
+    } else {
+      right = mid - 1;
+    }
   }
-  return -1; // элемент не найден
+  return -1;
 }
 ```
 
