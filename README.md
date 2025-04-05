@@ -91,4 +91,89 @@ function printTwice(arr) {
 ```
 
 ## Структуры данных
+
+1) Массив (Array) - хранит элементы в последовательности. Доступ к элементу за O(1). Вставка/удаление в начало/середину массива — O(n).
+```
+const arr = [1, 2, 3];
+```
+
+2) Хеш-таблица (Hash Table) - хранит пары ключ-значение. Доступ за O(1).
+```
+const map = {};
+map['key'] = 'value';
+```
+
+3) Стек (Stack) - LIFO (Last In, First Out).
+Операции: push, pop.
+```
+const stack = [];
+stack.push(1); // Добавить
+stack.pop();   // Удалить
+```
+
+4) Очередь (Queue) - FIFO (First In, First Out).
+Операции: enqueue, dequeue.
+```
+const queue = [];
+queue.push(1); // Добавить
+queue.shift(); // Удалить
+```
+
+5) Связанный список (Linked List) - Узлы хранят значение и ссылку на следующий узел. Вставка/удаление за O(1) (если знаете узел).
+```
+class Node {
+  constructor(value) {
+  this.value = value;
+  this.next = null;
+  }
+}
+```
+
+6) Дерево (Tree) - Иерархическая структура с корнем и дочерними узлами.
+Пример: бинарное дерево.
+```
+class TreeNode {
+  constructor(value) {
+  this.value = value;
+  this.left = null;
+  this.right = null;
+  }
+}
+```
+
+7) Граф (Graph) - Множество вершин и ребер.
+Пример: социальная сеть.
+```
+const graph = {
+  A: ['B', 'C'],
+  B: ['A', 'D'],
+  C: ['A'],
+  D: ['B']
+};
+```
+
+8) Map (new Map()) - отличительная особеннность структуры данных Map это то, что в Map ключем может быть все что угодно. Сохраняется порядок при добавлении.
+Методы: set - добавить элемент, get - получить элемент, has - есть ли ключ, delete - удаляем по ключу, clear - очищаем все, size - узнать размер.
+Пример:
+```
+const map = new Map();
+function best(){console.log("this function the best")};
+const array = [1,2,3,4,5,6];
+map.set(best, 'interesting function');
+map.set(array, 'interesting array');
+map.get(array); // 'interesting array'
+map.get(best) // 'interesting function'
+```
+
+10) Set (new Set()) - отличительной чертой структуры данных Set является то, что Set всегда хранит уникальные значения. Сохраняется порядок при добавлении.
+Методы: add - добавили элемент, delete - удалили элемент, has - проверили что элемент есть, clear - почистили, size - узнать размер.
+Пример:
+```
+const vault = new Set();
+vault.add(3)
+vault.add(2)
+vault.add(3)
+console.log(vault) // Set [ 3, 2 ]
+```
+
 ## Алгоритмы
