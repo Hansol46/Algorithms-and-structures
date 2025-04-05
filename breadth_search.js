@@ -1,17 +1,10 @@
 /**
-BFS (поиск в ширину):    
-        Использует очередь.
-        Обходит все соседние узлы перед тем, как переходить дальше.
-        Полезен для поиска кратчайшего пути.
-         
+* BFS (поиск в ширину):    
+* Использует очередь.
+* Обходит все соседние узлы перед тем, как переходить дальше.
+* Полезен для поиска кратчайшего пути.
 
-    DFS (поиск в глубину):    
-        Использует стек (или рекурсию).
-        Углубляется максимально в один путь, прежде чем вернуться назад.
-        Полезен для проверки связности или обхода всех возможных путей.
-*/
-
-/**
+*      ищем кратчайший путь (в невзвешенном графе) 
 *      A -- B -- C
 *      |    |
 *      D -- E
@@ -23,14 +16,13 @@ const graph = {
     D: ['A', 'E'],
     E: ['B', 'D']
 };
-// ищем кратчайший путь (в невзвешенном графе) 
 function breadthSearch(graph, start, target) {
-  const queue = [[start]];
-  const visited = new Set();
+  const queue = [[start]]; 
+  const visited = new Set(); 
         
   while(queue.length > 0) {
-   const path = queue.shift(); // ["A"]
-   const currentNode = path[path.length - 1]; // "A"
+   const path = queue.shift();
+   const currentNode = path[path.length - 1];
 
    if(!visited.has(currentNode)){
      if(currentNode === target) return path;
