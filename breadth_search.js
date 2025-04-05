@@ -17,8 +17,8 @@ const graph = {
     E: ['B', 'D']
 };
 function breadthSearch(graph, start, target) {
-  const queue = [[start]]; 
-  const visited = new Set(); 
+  const queue = [[start]];
+  const visited = new Set();
         
   while(queue.length > 0) {
    const path = queue.shift();
@@ -29,9 +29,9 @@ function breadthSearch(graph, start, target) {
 
      visited.add(currentNode);
 
-     for(let neighbor of graph[currentNode]) {
+     for(let neighbor of graph[currentNode]) { 
        if(!visited.has(neighbor)) {
-         queue.push([...path, neighbor])
+         queue.push([...path, neighbor]) 
        }
      }
    }
