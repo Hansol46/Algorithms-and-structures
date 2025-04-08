@@ -185,3 +185,10 @@ console.log(vault) // Set [ 3, 2 ]
 <a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/linear_search.js'> Линейный поиск </a>
 <br />
 <a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/binary_search.js'> Двоичный поиск </a>
+
+### Сортировка:
+<a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/bubble_sort.js'> Пузырьковая сортировка </a>
+<br />
+<a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/selection_sort.js'> Выборочная сортировка </a>
+<br />
+<a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/quick_sort.js'> Быстрая сортировка </a>
