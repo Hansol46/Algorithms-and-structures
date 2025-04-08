@@ -183,4 +183,5 @@ console.log(vault) // Set [ 3, 2 ]
 
 ### Поиск:
 <a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/linear_search.js'> Линейный поиск </a>
+<br />
 <a href='https://github.com/Hansol46/Algorithms-and-structures/blob/main/binary_search.js'> Двоичный поиск </a>
