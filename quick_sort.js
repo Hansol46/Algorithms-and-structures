@@ -1,5 +1,9 @@
 const array = [1,15,7,5,9,10,2,6,-4,0,-2,3, 19];
 
+/**
+ * Сложность алгоритма: O(n*log(n)), 
+ * где n - количество элементов в массиве.
+ */
 function quickSort(array){
   if(array.length <= 1) {
     return array
